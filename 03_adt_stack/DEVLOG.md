@@ -1,0 +1,7 @@
+9/14/2026:
+The majority of the assignment was handled today. The in writing the function of the methods, some of the most notable decisions I had to make were in the `pop` method. In `pop` I had initially wanted to not just logically shift the position of the `topIndex`, I wanted to physically remove the value that had been pushed and stored in the array, but ultimately with the way `topIndex` is used to move around the array without actually having to look inside, the removal of those values was unnecessary since they will be overwritten in `push`. The choice to simplify `pop` also lead to a cleaner look. 
+
+In the cases where the primary use of the method had to be interrupted because of an empty or full stack, I added a printed message to the user that will tell simply that the "stack is full/empty". additionally, since `pop` and `peek` shared this message, I added their method names in the printed statement to give the user additional information on where this interruption occurred. These 
+
+Things I'd do differently:
+In the printed message after stopping a push, pop, or top function because of the stack being full or empty. I would prefer if this message gave the name of the stack that is full or empty. 
